@@ -1,0 +1,49 @@
+/* Import Tailwind CSS base styles */
+@tailwind base;
+
+/* Import Tailwind CSS component styles */
+@tailwind components;
+
+/* Import Tailwind CSS utility styles */
+@tailwind utilities;
+
+/* Custom Project Styles */
+.project-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Smooth Scroll Animation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Simple Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade-in class for elements */
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Custom form styles (if using a contact form) */
+input,
+textarea {
+  border-radius: 0.375rem; /* Tailwind equivalent to rounded-md */
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f59e0b; /* Custom focus color */
+  box-shadow: 0 0 5px rgba(245, 158, 11, 0.5); /* Similar to ring effect */
+}

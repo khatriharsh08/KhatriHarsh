@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Harsh Khatri | Web Developer & PHP Enthusiast</title>
+    <meta name="description"
+        content="Portfolio of Harsh Khatri, a web developer specializing in PHP, JavaScript, and modern frontend technologies.">
+    <meta name="keywords"
+        content="Harsh Khatri, Web Developer, PHP, JavaScript, Tailwind CSS, Portfolio, CodeIgniter, Flutter">
+    <meta name="author" content="Harsh Khatri">
+        
+    <!-- Favicon -->
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/tailwind.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-yellow-500" src="image/bg.png">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-40 shadow-md z-50">
+        <div class="flex justify-between items-center py-4 px-6">
+            <!-- Logo and Website Name -->
+            <div class="flex items-center">
+                <img src="image/l.jpeg" alt="Temporary Logo" class="h-8 w-8">
+                <a href="#home" class="text-white ml-2 font-bold text-lg hover:text-yellow-500 transition">My Website</a>
+            </div>
+
+            <!-- Menu for large screens (hidden on small screens) -->
+            <ul class="hidden lg:flex space-x-8 text-white">
+                <li><a href="#home" class="hover:text-yellow-500 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-500 transition">About Me</a></li>
+                <li><a href="#projects" class="hover:text-yellow-500 transition">Projects</a></li>
+                <li><a href="#skills" class="hover:text-yellow-500 transition">Skills</a></li>
+                <li><a href="#contact" class="hover:text-yellow-500 transition">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Icon (shown only on mobile) -->
+            <button id="menu-toggle"
+                class="lg:hidden p-2 rounded-md transition duration-300 ease-in-out text-yellow-500 focus:outline-none">
+                <!-- Menu icon -->
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+                <!-- Close icon (hidden by default) -->
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <ul id="mobile-menu" class="lg:hidden hidden text-white bg-black bg-opacity-40 space-y-4 py-4">
+            <li><a href="#home" class="block text-center hover:text-yellow-500 transition duration-200">Home</a></li>
+            <li><a href="#about" class="block text-center hover:text-yellow-500 transition duration-200">About Me</a>
+            </li>
+            <li><a href="#projects" class="block text-center hover:text-yellow-500 transition duration-200">Projects</a>
+            </li>
+            <li><a href="#skills" class="block text-center hover:text-yellow-500 transition duration-200">Skills</a>
+            </li>
+            <li><a href="#contact" class="block text-center hover:text-yellow-500 transition duration-200">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home"
+        class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 text-center">
+        <h1 class="text-5xl font-bold text-yellow-500 shadow-md">Harsh Khatri</h1>
+        <p class="text-xl mt-2">Web Developer | PHP Enthusiast</p>
+        <p class="text-lg mt-4 text-gray-300">BCA Graduate, ITM University</p>
+        <a href="#contact"
+            class="mt-6 px-6 py-3 bg-yellow-500 text-gray-900 rounded-lg shadow-lg hover:bg-yellow-400 transition">Contact
+            Me</a>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800 text-center">
+        <div class="max-w-4xl mx-auto bg-gray-900 p-8 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-semibold text-yellow-500">About Me</h2>
+            <p class="text-lg mt-4 text-gray-300">
+                I am a web developer with a passion for creating modern and responsive websites. I specialize in
+                frontend
+                technologies like HTML, CSS, JavaScript, and Tailwind CSS, alongside backend development using PHP and
+                CodeIgniter.
+            </p>
+            <!-- Resume Download Button -->
+            <a href="resume/Harsh_Khatri_Resume.pdf" download
+                class="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-gray-900 rounded-lg shadow-lg hover:bg-yellow-400 transition-all duration-300 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="white" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Download Resume
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-900">
+        <h2 class="text-4xl font-semibold text-center text-yellow-500">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-4">
+            <!-- Project Card Example -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition">
+                <h3 class="text-2xl font-bold">Project Title</h3>
+                <p class="text-gray-400 mt-2">Project description goes here. Highlight key features or technologies
+                    used.
+                </p>
+            </div>
+
+            <!-- Project 1: TeamXspark Website -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition">
+                <h3 class="text-2xl font-bold">TeamXspark Website</h3>
+                <p class="text-gray-400 mt-2">A responsive website for a BGMI esports team organization. Showcases team
+                    details, upcoming matches, and results.</p>
+            </div>
+
+            <!-- Project 2: Weather Forecast App -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition">
+                <h3 class="text-2xl font-bold">Weather Forecast App</h3>
+                <p class="text-gray-400 mt-2">Developed using HTML, Tailwind CSS, and JavaScript. It fetches real-time
+                    weather data from a public API and displays forecasts with dynamic background changes.</p>
+            </div>
+
+            <!-- Project 3: AI Disaster Prediction -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition">
+                <h3 class="text-2xl font-bold">AI Disaster Prediction System</h3>
+                <p class="text-gray-400 mt-2">A Python-based project that analyzes weather data to predict potential
+                    natural
+                    disasters using machine learning. Includes a web interface to display alerts.</p>
+            </div>
+
+            <!-- Project 4: Personal Blog Website -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition">
+                <h3 class="text-2xl font-bold">Personal Blog Website</h3>
+                <p class="text-gray-400 mt-2">A full-stack blog website built with PHP and CodeIgniter. Allows users to
+                    create accounts, publish blog posts, and comment on articles.</p>
+            </div>
+
+            <!-- Project 5: Portfolio Website -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition">
+                <h3 class="text-2xl font-bold">Portfolio Website</h3>
+                <p class="text-gray-400 mt-2">This very portfolio! Built with HTML, Tailwind CSS, and JavaScript to
+                    showcase
+                    projects, skills, and contact information in a clean and responsive layout.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-900 text-center">
+        <h2 class="text-4xl font-semibold text-yellow-500">Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 px-4">
+            <!-- Skill Item: HTML -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"
+                    class="h-16 w-16 mx-auto">
+                <p class="mt-2 text-gray-300">HTML</p>
+                <div class="w-full bg-gray-700 h-2 mt-2 rounded-full">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <!-- Skill Item: CSS -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"
+                    class="h-16 w-16 mx-auto">
+                <p class="mt-2 text-gray-300">CSS</p>
+                <div class="w-full bg-gray-700 h-2 mt-2 rounded-full">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <!-- Skill Item: JavaScript -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"
+                    class="h-16 w-16 mx-auto">
+                <p class="mt-2 text-gray-300">JavaScript</p>
+                <div class="w-full bg-gray-700 h-2 mt-2 rounded-full">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <!-- Skill Item: Python -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"
+                    class="h-16 w-16 mx-auto">
+                <p class="mt-2 text-gray-300">Python</p>
+                <div class="w-full bg-gray-700 h-2 mt-2 rounded-full">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <!-- Skill Item: PHP -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP"
+                    class="h-16 w-16 mx-auto">
+                <p class="mt-2 text-gray-300">PHP</p>
+                <div class="w-full bg-gray-700 h-2 mt-2 rounded-full">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <!-- Skill Item: React -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg" alt="React"
+                    class="h-16 w-16 mx-auto">
+                <p class="mt-2 text-gray-300">React.js</p>
+                <div class="w-full bg-gray-700 h-2 mt-2 rounded-full">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <!-- Skill Item: Tailwind CSS -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS"
+                    class="h-16 w-16  mx-auto">
+                <p class="mt-2 text-gray-300">Tailwind CSS</p>
+                <div class="w-full bg-gray-700 h-2 mt-2 rounded-full">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <!-- Skill Item: Flutter -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg" alt="Flutter"
+                    class="h-16 w-16 mx-auto">
+                <p class="mt-2 text-gray-300">Flutter</p>
+                <div class="w-full bg-gray-700 h-2 mt-2 rounded-full">
+                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 65%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-900 text-center">
+    <h2 class="text-4xl font-semibold text-yellow-500">Contact</h2>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-md mx-auto my-10">
+        <p class="text-white text-center mb-6">
+            You can reach me at <br />
+            <a href="mailto:khatriharsh.official@gmail.com"
+                class="text-orange-500 hover:text-yellow-500 transition duration-300">khatriharsh.official@gmail.com</a>
+        </p>
+
+        <form id="contactForm" class="space-y-4">
+            <!-- Input Fields -->
+            <input type="text" name="name" id="name"
+                class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-orange-500 focus:outline-none"
+                placeholder="Your Name" required>
+
+            <input type="email" name="email" id="email"
+                class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-orange-500 focus:outline-none"
+                placeholder="Your Email" required>
+
+            <textarea name="message" id="message"
+                class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-orange-500 focus:outline-none"
+                rows="4" placeholder="Your Message" required></textarea>
+
+            <!-- Send Message Button -->
+            <div class="flex justify-center">
+                <button type="submit"
+                    class="w-auto flex items-center gap-2 text-white py-2 px-4 rounded-md hover:text-yellow-500 hover:bg-orange-600 transition-all duration-300 ease-in-out hover:shadow-lg focus:ring-2 focus:ring-orange-400 focus:ring-opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                    </svg>
+                    Send Message
+                </button>
+            </div>
+        </form>
+        <p id="responseMessage" class="text-white mt-4"></p> <!-- Custom response message -->
+    </div>
+</section>
+
+
+
+    <footer class="bg-gray-900 py-12 text-gray-400">
+        <div class="container mx-auto px-4">
+            <!-- Footer Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Logo & Short Description -->
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="image/l.jpeg" alt="Logo" class="h-16 w-16 mb-4">
+                    <p class="text-center md:text-left">
+                        Harsh Khatri - Web Developer & PHP Enthusiast. Creating responsive websites with modern
+                        technologies.
+                    </p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="flex flex-col items-center md:items-middle">
+                    <h3 class="text-xl font-semibold text-yellow-500 mb-4 flex items-center gap-2">
+                        <!-- SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                        </svg>
+                        <!-- Text -->
+                        Connect with Me
+                    </h3>
+
+                    <ul class="space-y-2 list-none pl-0">
+                        <li>
+                            <a href="https://linkedin.com/in/khatri-harsh-5834hk" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn Profile"
+                                class="flex items-center hover:text-yellow-500 transition">
+                                <img width="16" height="16" src="https://img.icons8.com/small/16/FFFFFF/linkedin.png"
+                                    alt="LinkedIn" />
+                                <span class="ml-2">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/khatriharsh08" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub Profile" class="flex items-center hover:text-yellow-500 transition">
+                                <img width="16" height="16" src="https://img.icons8.com/small/16/FFFFFF/github.png"
+                                    alt="GitHub" />
+                                <span class="ml-2">GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="flex flex-col items-center md:items-end">
+                    <h3 class="text-xl font-semibold text-yellow-500 mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-yellow-500 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-yellow-500 transition">About Me</a></li>
+                        <li><a href="#projects" class="hover:text-yellow-500 transition">Projects</a></li>
+                        <li><a href="#skills" class="hover:text-yellow-500 transition">Skills</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="my-8 border-gray-700">
+
+            <!-- Copyright & Back to Top -->
+            <div class="flex justify-between items-center">
+                <p class="text-sm">
+                    © 2024 Harsh Khatri. All Rights Reserved.
+                </p>
+                <a href="#home" class="flex items-center gap-2 text-yellow-500 hover:text-yellow-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                    </svg>
+                    Back to Top
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
